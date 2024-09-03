@@ -43,6 +43,5 @@ jobs:
       - name: Run Docker Compose
         run: |
           docker-compose -f ${{ github.workspace }}/docker-compose.yml up -d
-          sleep 30 # wait for services to start
       
       - run: echo "🍏 This job's status is ${{ job.status }}."
